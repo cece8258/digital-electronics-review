@@ -134,14 +134,6 @@
   <a href="#ch7">第7章 半导体存储器</a>
   <a href="#ch7" class="sub">7.1 只读存储器 ROM</a>
   <a href="#ch7" class="sub">7.2 随机存取 RAM</a>
-  <a href="#ch8">第8章 脉冲波形的产生与整形</a>
-  <a href="#ch8" class="sub">8.1 施密特触发器</a>
-  <a href="#ch8" class="sub">8.2 单稳态触发器</a>
-  <a href="#ch8" class="sub">8.3 多谐振荡器</a>
-  <a href="#ch8" class="sub">8.4 555定时器（重点）</a>
-  <a href="#ch9">第9章 数模与模数转换</a>
-  <a href="#ch9" class="sub">9.1 D/A转换器 DAC</a>
-  <a href="#ch9" class="sub">9.2 A/D转换器 ADC</a>
   <a href="#comprehensive">综合题目</a>
   <a href="#summary">重点汇总</a>
   <a href="#formulas">公式速查表</a>
@@ -1290,10 +1282,10 @@ endmodule</pre>
 <!-- ============================================================ -->
 <!-- 第8章 脉冲波形的变换与产生 -->
 <!-- ============================================================ -->
-<h2 id="ch8">第8章 脉冲波形的变换与产生</h2>
+<h2 id="ch8">第8章 脉冲波形的变换与产生 <span style="color:#dc2626;font-size:0.8rem;">（非考试范围，仅供参考）</span></h2>
 
-<div class="card key">
-<strong>🎯 本章重点：</strong>施密特触发器（滞回特性）、单稳态触发器（定时）、多谐振荡器（自激振荡）、<strong>555定时器</strong>的三种典型电路及参数计算。
+<div class="card danger">
+<strong>⚠️ 本章不在考试范围内，仅作课外参考。</strong>
 </div>
 
 <h3>8.1 三种脉冲电路对比</h3>
@@ -1411,10 +1403,10 @@ t<sub>w2</sub> = (1-q)T = 0.6 × 200 = 120μs (放电)
 <!-- ============================================================ -->
 <!-- 第9章 数模与模数转换 -->
 <!-- ============================================================ -->
-<h2 id="ch9">第9章 数模与模数转换器</h2>
+<h2 id="ch9">第9章 数模与模数转换器 <span style="color:#dc2626;font-size:0.8rem;">（非考试范围，仅供参考）</span></h2>
 
-<div class="card key">
-<strong>🎯 本章重点：</strong>DAC（倒T型电阻网络）输出电压计算、ADC的四个步骤（采样→保持→量化→编码）、采样定理、三种ADC类型对比、分辨率和精度的概念。
+<div class="card danger">
+<strong>⚠️ 本章不在考试范围内，仅作课外参考。</strong>
 </div>
 
 <h3>9.1 D/A转换器（DAC）</h3>
@@ -1682,9 +1674,9 @@ S₀ --X=1--> S₁ --X=1--> S₂ --X=1--> S₃ --X=1--> S₃
 </details>
 </div>
 
-<!-- 综合题8 555定时器 -->
+<!-- 综合题8 555定时器——非考试范围 -->
 <div class="card example">
-<h4>📝 综合题8：555多谐振荡器设计</h4>
+<h4>📝 综合题8：555多谐振荡器设计 <span style="color:#dc2626;">（非考试范围）</span></h4>
 <p>用555定时器设计一个多谐振荡器，要求输出方波频率 f=1kHz，占空比 q=60%，电容 C=0.1μF。求 R₁ 和 R₂。</p>
 <details>
 <summary>点击查看解答</summary>
@@ -1700,7 +1692,7 @@ R₁ = 2.8kΩ → 取 2.7kΩ</pre>
 
 <!-- 综合题9 555电路识别 -->
 <div class="card example">
-<h4>📝 综合题9：判断555电路类型（高频考点）</h4>
+<h4>📝 综合题9：判断555电路类型 <span style="color:#dc2626;">（非考试范围）</span></h4>
 <p>根据引脚连接方式判断下列电路类型：</p>
 <table>
 <tr><th>接法</th><th>电路类型</th></tr>
@@ -1757,15 +1749,15 @@ R₁ = 2.8kΩ → 取 2.7kΩ</pre>
 <p>逐项检查，确保每个知识点都掌握到位：</p>
 <ol>
 <li>□ 3变量/4变量卡诺图化简能在5分钟内完成</li>
-<li>□ 能默写四种触发器的特性方程</li>
-<li>□ 能按"写方程→列状态表→画状态图→析功能"完成时序电路分析</li>
+<li>□ 能默写四种触发器的特性方程（RS、JK、D、T）</li>
+<li>□ 能按"写方程→列状态表→画状态图→析功能"完成同步时序电路分析</li>
+<li>□ 能独立完成同步时序电路设计（含自启动检查）</li>
 <li>□ 能用清零法和置数法设计任意进制计数器（74LS161）</li>
-<li>□ 能默写555多谐振荡器的周期公式 T=0.693(R₁+2R₂)C</li>
-<li>□ 能区分555的三种电路类型（看TH/TR引脚接法）</li>
-<li>□ 能计算DAC输出电压和ADC数字量</li>
+<li>□ 能写出时序电路的三大方程（输出/激励/状态转换）</li>
 <li>□ 能用74LS138+与非门 或 74LS151实现任意3变量逻辑函数</li>
 <li>□ 能判断电路中是否存在竞争冒险并消除</li>
-<li>□ 检查自启动是时序电路设计的最后一步，不忘记</li>
+<li>□ 记住74LS194的四种工作模式（S₁S₀：保持/右移/左移/置数）</li>
+<li>□ 异步时序分析时先写出时钟方程，逐一判断各触发器是否有有效时钟沿</li>
 </ol>
 </div>
 
@@ -1860,33 +1852,6 @@ R₁ = 2.8kΩ → 取 2.7kΩ</pre>
 </ul>
 </div>
 
-<div class="card key">
-<h4>第8章 脉冲波形的变换与产生</h4>
-<ul>
-<li>✅ <strong>施密特触发器：</strong>双阈值 + 滞回特性（回差 ΔV<sub>T</sub>=V<sub>T+</sub>−V<sub>T-</sub>）</li>
-<li>✅ <strong>单稳态触发器：</strong>一触即发，固定脉宽 t<sub>w</sub>=1.1RC</li>
-<li>✅ <strong>多谐振荡器：</strong>自激振荡，无需触发，产生方波</li>
-<li>✅ <strong>555定时器核心公式（必背）：</strong>
-  <ul>
-    <li>多谐振荡器：T=0.693(R₁+2R₂)C，q=(R₁+R₂)/(R₁+2R₂) > 50%</li>
-    <li>单稳态：t<sub>w</sub> = 1.1 RC</li>
-    <li>施密特：V<sub>T+</sub>=2/3V<sub>CC</sub>，V<sub>T-</sub>=1/3V<sub>CC</sub></li>
-  </ul>
-</li>
-<li>✅ 三种电路识别：看TH(⑥)和TR(②)的接法即可区分</li>
-</ul>
-</div>
-
-<div class="card key">
-<h4>第9章 数模与模数转换器</h4>
-<ul>
-<li>✅ <strong>DAC公式：</strong>V<sub>O</sub> = −(V<sub>REF</sub>/2<sup>n</sup>) × D</li>
-<li>✅ <strong>DAC分辨率：</strong>1/(2<sup>n</sup>−1)，n越大精度越高</li>
-<li>✅ <strong>ADC四步骤：</strong>采样→保持→量化→编码</li>
-<li>✅ <strong>采样定理：</strong>f<sub>s</sub> ≥ 2f<sub>i(max)</sub></li>
-<li>✅ 三种ADC：并行比较型（最快）、逐次逼近型（最常用）、双积分型（最准）</li>
-</ul>
-</div>
 
 <!-- ============================================================ -->
 <!-- 公式速查表 -->
@@ -1909,12 +1874,6 @@ R₁ = 2.8kΩ → 取 2.7kΩ</pre>
 <tr><td>占空比</td><td><code>q = t<sub>w</sub> / T × 100%</code></td><td></td></tr>
 <tr><td>补码</td><td>(N的补码) = (N的反码) + 1</td><td>负数的补码</td></tr>
 <tr><td>容量</td><td>ROM容量 = 2<sup>n</sup> × m 位</td><td>n条地址线，m条数据线</td></tr>
-<tr><td>555多谐振荡周期</td><td><code>T = 0.693(R₁+2R₂)C</code></td><td>f = 1/T</td></tr>
-<tr><td>555多谐占空比</td><td><code>q = (R₁+R₂)/(R₁+2R₂)</code></td><td>恒大于50%</td></tr>
-<tr><td>555单稳态脉宽</td><td><code>t<sub>w</sub> = 1.1 RC</code></td><td></td></tr>
-<tr><td>555施密特阈值</td><td><code>V<sub>T+</sub>=2/3V<sub>CC</sub>, V<sub>T-</sub>=1/3V<sub>CC</sub></code></td><td>ΔV<sub>T</sub>=1/3V<sub>CC</sub></td></tr>
-<tr><td>DAC输出电压</td><td><code>V<sub>O</sub>=−(V<sub>REF</sub>/2<sup>n</sup>)×D</code></td><td>D为数字量十进制值</td></tr>
-<tr><td>采样定理</td><td><code>f<sub>s</sub> ≥ 2f<sub>i(max)</sub></code></td><td>采样频率≥信号最高频率2倍</td></tr>
 </table>
 </div>
 
@@ -1923,15 +1882,15 @@ R₁ = 2.8kΩ → 取 2.7kΩ</pre>
 <h4>📊 考试分值分布参考（根据多所高校真题统计）</h4>
 <table>
 <tr><th>章节</th><th>分值占比</th><th>核心能力要求</th></tr>
-<tr><td>第2章 逻辑代数与化简</td><td>≈21%</td><td>卡诺图化简（必考基础技能）</td></tr>
-<tr><td>第4章 组合逻辑电路</td><td>≈21%</td><td>分析/设计/MSI器件应用</td></tr>
-<tr><td>第6章 时序逻辑电路</td><td>≈21%</td><td>同步时序分析、计数器设计</td></tr>
-<tr><td>第5章 触发器</td><td>≈11%</td><td>特性方程、波形图</td></tr>
-<tr><td>第8章 脉冲产生</td><td>≈10%</td><td>555定时器三种电路+参数计算</td></tr>
-<tr><td>第3章 门电路</td><td>≈11%</td><td>器件特性、输入端处理</td></tr>
-<tr><td>第1/7/9章</td><td>≈5%</td><td>数制/存储器/ADC-DAC基础</td></tr>
+<tr><td>第2章 逻辑代数与化简</td><td>≈25%</td><td>卡诺图化简（必考基础技能）</td></tr>
+<tr><td>第4章 组合逻辑电路</td><td>≈25%</td><td>分析/设计/MSI器件应用</td></tr>
+<tr><td>第6章 时序逻辑电路</td><td>≈25%</td><td>同步时序分析、计数器设计</td></tr>
+<tr><td>第5章 触发器</td><td>≈10%</td><td>特性方程、波形图</td></tr>
+<tr><td>第3章 门电路</td><td>≈10%</td><td>器件特性、输入端处理</td></tr>
+<tr><td>第1章 数字逻辑概论</td><td>≈3%</td><td>数制转换、编码</td></tr>
+<tr><td>第7章 半导体存储器</td><td>≈2%</td><td>ROM/RAM分类、容量扩展</td></tr>
 </table>
-<p><strong>核心三章（2+4+6）合计占63%！</strong>这是复习的重中之重。</p>
+<p><strong>核心三章（2+4+6）合计占约75%！</strong>这是复习的重中之重。考试范围：第1~7章。</p>
 </div>
 
 <!-- ============================================================ -->
