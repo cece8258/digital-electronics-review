@@ -1,0 +1,23 @@
+# 教材PDF（文件较大，且有版权）
+教材（附带习题答案）/
+
+# 原始PPT文件（老师课件，有版权）
+*.ppt
+*.pptx
+*.pdf
+*.docx
+
+# 转换文件夹中的PPT
+ppt~pptx/
+
+# 临时提取文件
+_extracted/
+_extracted_v2/
+_filtered/
+
+# 提取脚本
+*.py
+
+# 系统文件
+.DS_Store
+Thumbs.db
